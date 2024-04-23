@@ -31,13 +31,17 @@ color: rgb(0, 161, 155);
 }
 .container 
 {
-  position: relative;
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border: 1px solid black; /* Just for visualization */
 }
 
-.image 
+.image
 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
 }
+
