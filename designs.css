@@ -6,84 +6,13 @@
   padding: 40px 0;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  width: 10%;
-  position: relative;
-  margin: 30px auto;
-
-  &.center-ball {
-    background: $aqua;
-
-    &:before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      background: $aqua;
-      display: inline-block;
-      border: 2px solid $aqua;
-      @include border-radius(50%);
-      position: absolute;
-      top: -4px;
-      left: 50%;
-      margin: 0 0 0 -3px;
-    }
-  }
-
-  &.center-diamond {
-    background: $aqua;
-
-    &:before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      background: $aqua;
-      display: inline-block;
-      border: 2px solid $aqua;
-      position: absolute;
-      top: -5px;
-      left: 50%;
-      margin: 0 0 0 -3px;
-      transform: rotate(45deg);
-      -ms-transform: rotate(45deg); /* IE 9 */
-      -webkit-transform: rotate(45deg); /* Opera, Chrome, and Safari */
-    }
-  }
-
-  &.center-square {
-    background: $aqua;
-
-    &:before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      background: $aqua;
-      display: inline-block;
-      border: 2px solid $aqua;
-      position: absolute;
-      top: -5px;
-      left: 50%;
-      margin: 0 0 0 -3px;
-    }
-  }
-
-  &.center-star {
-    background: $aqua;
-
-    &:before {
-      content: "★";
-      color: $aqua;
-      display: inline-block;
-      position: absolute;
-      top: 0px;
-      left: 50%;
-      margin: 0 0 0 -3px;
-      font-size: 15px;
-      line-height: 0;
-      text-shadow: 0 0 3px lighten($black-20, 5%);
-    }
-  }
+hr.cloud {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr.cloud:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
 }
 
 /**/
