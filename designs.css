@@ -1,0 +1,10 @@
+/* Base Divider class */
+.divider {
+  display: flex;
+  
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
