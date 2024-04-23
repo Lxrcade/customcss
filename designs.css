@@ -5,6 +5,16 @@
 	color: white;
 }
 
+.mercwhite
+{
+	color: #999B9B;
+}
+
+.mercblue
+{
+	color: rgb(0, 161, 155);
+}
+
 table {
     width: 100%;
     border: 2px groove rgb(0, 161, 155);
