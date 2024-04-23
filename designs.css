@@ -7,7 +7,8 @@
 }
 
 hr.cloud {
-    border: 0;
+    border: 1;
+    border-color: red;
     height: 0; /* Firefox... */
     box-shadow: 0 0 10px 1px aqua;
 }
