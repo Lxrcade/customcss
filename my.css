@@ -1,10 +1,10 @@
 /* */
-body
+body/* Background color */
 {
 background-color: HSL(0, 0%, 0.4%);
 }
 
-h1
+h1 /* Header */
 {
 color: #999B9B;
 text-align: center;
