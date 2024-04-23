@@ -4,11 +4,12 @@ body/* Background color */
 background-color: HSL(0, 0%, 0.4%);
 }
 
-h1 /* Header */
+h1 
 {
-color: #999B9B;
-text-align: center;
-font-family: Courier;
+    color: #999B9B;
+    text-align: center;
+    font-family: Courier;
+    margin-left: 50px; /* Adjust as needed to ensure text doesn't overlap with the image */
 }
 
 p
@@ -37,11 +38,13 @@ color: rgb(0, 161, 155);
     height: 200px; /* Adjust as needed */
 }
 
-.image
+.image 
 {
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translate(0, -50%);
+    left: -50px; /* Adjust as needed */
 }
+
+
+
 
