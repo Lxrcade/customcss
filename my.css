@@ -39,7 +39,8 @@ color: rgb(0, 161, 155);
 .container 
 {
     position: relative;
-    display: inline-block; /* Ensure the container only takes the necessary width */
+    display: block;
+    margin: auto; /* Ensure the container only takes the necessary width */
 }
 
 .image 
