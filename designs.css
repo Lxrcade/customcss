@@ -5,10 +5,15 @@
 	color: white;
 }
 
-table, th, td 
-{
-	border: 2px groove rgb(0, 161, 155);
+table {
+    width: 100%;
+    border: 2px groove rgb(0, 161, 155);
 }
+
+th, td {
+    border: 2px groove rgb(0, 161, 155);
+}
+
 
 .container2 {
   width: 960px;
