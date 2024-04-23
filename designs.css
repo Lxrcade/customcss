@@ -5,6 +5,11 @@
 	color: white;
 }
 
+th, td 
+{
+  border-color: rgb(0, 161, 155);
+}
+
 .container2 {
   width: 960px;
   margin: 0 auto;
