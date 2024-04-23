@@ -1,24 +1,21 @@
 /* Base Divider class */
-.container2
-{
+.container2 {
   width: 960px;
   margin: 0 auto;
   padding: 40px 0;
 }
 
-hr{
-  
+hr {
   border: 0;
   height: 1px;
   width: 10%;
   position: relative;
   margin: 30px auto;
-  
-  
-  &.center-ball{
+
+  &.center-ball {
     background: $aqua;
-    
-    &:before{
+
+    &:before {
       content: "";
       width: 6px;
       height: 6px;
@@ -32,11 +29,11 @@ hr{
       margin: 0 0 0 -3px;
     }
   }
-  
-  &.center-diamond{
+
+  &.center-diamond {
     background: $aqua;
-    
-    &:before{
+
+    &:before {
       content: "";
       width: 6px;
       height: 6px;
@@ -47,16 +44,16 @@ hr{
       top: -5px;
       left: 50%;
       margin: 0 0 0 -3px;
-      transform:rotate(45deg);
-      -ms-transform:rotate(45deg); /* IE 9 */
-      -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Opera, Chrome, and Safari */
     }
   }
-  
-  &.center-square{
+
+  &.center-square {
     background: $aqua;
-    
-    &:before{
+
+    &:before {
       content: "";
       width: 6px;
       height: 6px;
@@ -69,11 +66,11 @@ hr{
       margin: 0 0 0 -3px;
     }
   }
-  
-  &.center-star{
+
+  &.center-star {
     background: $aqua;
-    
-    &:before{
+
+    &:before {
       content: "★";
       color: $aqua;
       display: inline-block;
@@ -87,6 +84,7 @@ hr{
     }
   }
 }
+
 /**/
 	
 .divider 
