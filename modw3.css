@@ -5,14 +5,14 @@
 .w3-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    	background-color: #FFFFFF;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .w3-button {
-    background-color: #4CAF50;
+    background-color: #FFFFFF;;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -20,5 +20,5 @@
 }
 
 .w3-button:hover {
-    background-color: #45a049;
+    	background-color: #999B9B;
 }
