@@ -5,9 +5,9 @@
 	color: white;
 }
 
-table, tr, th, td 
+table, th, td 
 {
-  border-color: rgb(0, 161, 155);
+	border: 2px groove rgb(0, 161, 155);
 }
 
 .container2 {
