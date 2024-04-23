@@ -5,7 +5,7 @@
 	color: white;
 }
 
-th, td 
+table, tr, th, td 
 {
   border-color: rgb(0, 161, 155);
 }
