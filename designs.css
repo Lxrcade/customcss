@@ -1,5 +1,6 @@
 /* Base Divider class */
-.divider {
+.divider 
+{
   display: flex;
   
   &:before,
@@ -7,4 +8,21 @@
     content: "";
     flex: 1;
   }
+}
+
+.gradient {
+  align-items: stretch;
+  margin: 1em 0;
+  height: 2em;
+  line-height: 2em;
+  color: white;
+  background: black;
+  
+  &:before {
+    background: linear-gradient(to right, white, black);
+  }
+  
+  &:after {
+    background: linear-gradient(to left, white, black);
+	}
 }
