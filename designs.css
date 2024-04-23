@@ -7,9 +7,8 @@
 }
 
 hr.cloud {
-    border: 1;
-    border-color: red;
-    height: 0; /* Firefox... */
+    border-top: 10px solid red;
+    height: 10px; /* Firefox... */
     box-shadow: 0 0 10px 1px aqua;
 }
 hr.cloud:after {  /* Not really supposed to work, but does */
