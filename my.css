@@ -29,3 +29,15 @@ i
 {
 color: rgb(0, 161, 155);
 }
+.container 
+{
+  position: relative;
+}
+
+.image 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -50%);
+}
