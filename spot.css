@@ -124,8 +124,8 @@ html, body {
     top: 0;
     width: 50px;
     height: 100vh;
-    background-color: rgb(0, 161, 155);
-    color: #999B9B;
+    background-color: #999B9B;
+    color: rgb(0, 161, 155);
     padding-top: 20px;
     overflow-y: auto;
     transition: width 0.3s ease;
@@ -166,11 +166,26 @@ html, body {
 /* Content Styles */
 .content {
     margin-left: 50px; /* Same as taskbar width */
+    padding-bottom: 100px; /* Ensure space for the footer */
 }
 
 /* Adjust the width of the content area to fit the remaining space */
 .albums-container {
     width: calc(100% - 50px); /* Subtract the taskbar width */
+    padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 50px); /* Subtract the taskbar width */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    z-index: 999; /* Ensure the footer appears above other content */
 }
 
 /* Font Awesome Icons */
