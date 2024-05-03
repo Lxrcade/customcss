@@ -117,9 +117,7 @@ html, body {
     cursor: pointer;
 }
 
-.spotify-player iframe:hover .play-button {
-    background-color: #ff0000; /* Change to your desired color */
-}
+
 
 
 
