@@ -166,7 +166,11 @@ html, body {
 /* Content Styles */
 .content {
     margin-left: 50px; /* Same as taskbar width */
-    padding-right: 220px; /* Width of expanded taskbar plus some extra space */
+}
+
+/* Adjust the width of the content area to fit the remaining space */
+.albums-container {
+    width: calc(100% - 50px); /* Subtract the taskbar width */
 }
 
 /* Font Awesome Icons */
