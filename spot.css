@@ -171,6 +171,7 @@ html, body {
 /* Adjust the width of the content area to fit the remaining space */
 .albums-container {
     width: calc(100% - 50px); /* Subtract the taskbar width */
+    padding: 20px;
 }
 
 /* Font Awesome Icons */
