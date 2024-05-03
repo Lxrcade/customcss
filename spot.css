@@ -117,6 +117,39 @@ html, body {
     cursor: pointer;
 }
 
+/* Taskbar Styles */
+.taskbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Adjust width as needed */
+    background-color: rgb(0, 161, 155);
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.taskbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.taskbar li {
+    margin-bottom: 10px;
+}
+
+.taskbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.taskbar a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 
