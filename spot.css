@@ -122,12 +122,22 @@ html, body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 50px;
     height: 100vh;
     background-color: rgb(0, 161, 155);
     color: #999B9B;
-    padding: 20px;
+    padding-top: 20px;
     overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.taskbar:hover {
+    width: 200px;
+}
+
+.taskbar .logo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .taskbar ul {
@@ -143,11 +153,23 @@ html, body {
 .taskbar a {
     text-decoration: none;
     color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
 }
 
 .taskbar a:hover {
-    text-decoration: underline;
+    background-color: #555;
 }
+
+/* Content Styles */
+.content {
+    margin-left: 50px; /* Same as taskbar width */
+    padding-right: 220px; /* Width of expanded taskbar plus some extra space */
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 
 
