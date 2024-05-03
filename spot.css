@@ -116,16 +116,15 @@ html, body {
 .spotify-ui .maximize-icon {
     cursor: pointer;
 }
-
-/* Taskbar Styles */
+    
 .taskbar {
     position: fixed;
     left: 0;
     top: 0;
-    bottom: 0;
     width: 100px; /* Adjust width as needed */
+    height: 100vh; /* Set height to cover the entire viewport */
     background-color: rgb(0, 161, 155);
-    color: #fff;
+    color: #999B9B;
     padding: 20px;
     overflow-y: auto;
 }
@@ -148,7 +147,6 @@ html, body {
 .taskbar a:hover {
     text-decoration: underline;
 }
-
 
 
 
