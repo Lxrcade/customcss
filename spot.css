@@ -60,3 +60,17 @@ html, body {
     text-align: center;
     padding: 20px;
 }
+
+/* Album Songs */
+.album-songs {
+    margin-top: 10px;
+}
+
+.album-songs .song-title {
+    font-weight: bold;
+}
+
+.album-songs .song-duration {
+    color: #888;
+}
+
