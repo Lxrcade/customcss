@@ -4,6 +4,7 @@
 /* Reset default browser styles */
 html,
 body {
+    background-color: HSL(0, 0%, 0.4%);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
