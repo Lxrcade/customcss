@@ -46,8 +46,9 @@ body {
     overflow-y: auto;
     transition: width 0.3s ease;
     z-index: 1000;
+    display: flex;
+    align-items: center; /* Center vertically */
 }
-
 
 .taskbar:hover {
     width: 200px;
@@ -62,7 +63,7 @@ body {
 }
 
 .taskbar.closed ul {
-    flex-direction: row; /* Display the navigation items horizontally when the taskbar is closed */
+    flex-direction: row; /* Display the navigation items horizontally when taskbar is closed */
 }
 
 .taskbar li {
@@ -75,12 +76,11 @@ body {
     transform: scale(1.1);
 }
 
-
 .taskbar a {
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 10px 0; /* Add padding to the top and bottom */
     text-align: center;
     transition: color 0.3s ease;
     white-space: nowrap; /* Prevent text wrapping */
