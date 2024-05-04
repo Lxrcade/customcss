@@ -110,7 +110,6 @@ body {
     margin-bottom: 20px;
 }
 
-
 .taskbar:hover a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
 }
