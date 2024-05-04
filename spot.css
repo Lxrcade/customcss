@@ -141,15 +141,35 @@ html, body {
     margin-bottom: 20px;
 }
 
-.taskbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .taskbar li {
     margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add transition for animation */
 }
+
+.taskbar li:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.taskbar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.taskbar a:hover {
+    background-color: #555;
+    color: rgb(0, 161, 155); /* Change color on hover */
+}
+
+/* Move About and Contact Us to the bottom */
+.taskbar ul {
+    position: absolute;
+    bottom: 0;
+}
+
 
 .taskbar a {
     text-decoration: none;
