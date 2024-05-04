@@ -87,7 +87,6 @@ body {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is closed */
 }
 
-
 /* Content Styles */
 .content {
     margin-left: 50px;
