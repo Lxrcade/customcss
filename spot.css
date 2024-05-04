@@ -31,12 +31,11 @@ body {
 }
 
 /* Taskbar Styles */
-/* Taskbar Styles */
 .taskbar {
     position: fixed;
     left: 0;
     top: 0;
-    width: 50px; /* Initial width */
+    width: 50px;
     height: 100vh;
     background-color: #999B9B;
     color: rgb(0, 161, 155);
@@ -44,33 +43,28 @@ body {
     overflow-y: auto;
     transition: width 0.3s ease;
     z-index: 1000;
-    display: flex; /* Use flexbox to control layout */
-    flex-direction: column; /* Display links vertically */
 }
 
-.taskbar:hover,
-.taskbar.open {
-    width: 200px; /* Expanded width */
+.taskbar:hover {
+    width: 200px;
 }
 
 .taskbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display links horizontally */
-    flex-direction: column; /* Initially, display links vertically */
+    display: flex;
+    flex-direction: column; /* Display the navigation items vertically by default */
 }
 
-.taskbar:hover ul,
-.taskbar.open ul {
-    flex-direction: row; /* Display links horizontally when hovered or open */
-    justify-content: space-around; /* Center the links horizontally */
+.taskbar.closed ul {
+    flex-direction: row; /* Display the navigation items horizontally when taskbar is closed */
 }
 
 .taskbar li {
     margin-bottom: 10px;
     transition: transform 0.3s ease;
-    flex-grow: 1; /* Fill available space */
+    transform-origin: left center; /* Ensure smooth transition origin */
 }
 
 .taskbar li:hover {
@@ -84,16 +78,13 @@ body {
     padding: 10px;
     text-align: center;
     transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    transform: rotate(90deg); /* Rotate the text vertically by default */
+    transform-origin: left center; /* Ensure proper rotation origin */
 }
 
-.taskbar a:hover {
-    background-color: #555;
-    color: rgb(0, 161, 155);
-}
-
-.taskbar ul:last-child {
-    position: absolute;
-    bottom: 0;
+.taskbar.closed a {
+    transform: rotate(0deg); /* Rotate the text horizontally when taskbar is closed */
 }
 
 
