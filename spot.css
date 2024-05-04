@@ -50,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .taskbar:hover {
@@ -66,6 +67,7 @@ body {
 
 .taskbar.closed ul {
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .taskbar li {
@@ -85,6 +87,8 @@ body {
     text-align: center;
     transition: color 0.3s ease;
     white-space: nowrap;
+    transform: rotate(90deg);
+    transform-origin: left center;
 }
 
 .taskbar.closed a {
@@ -93,16 +97,19 @@ body {
 
 .taskbar.closed .top-links a,
 .taskbar.closed .bottom-links a {
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
 }
 
 .taskbar .top-links {
     align-self: flex-start;
+    margin-top: 20px;
 }
 
 .taskbar .bottom-links {
     align-self: flex-end;
+    margin-bottom: 20px;
 }
+
 
 .taskbar:hover a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
