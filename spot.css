@@ -1,5 +1,6 @@
 /* Font Awesome Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 /* Reset default browser styles */
 html,
 body {
@@ -77,7 +78,7 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 10px 0; /* Add padding to the top and bottom */
     text-align: center;
     transition: color 0.3s ease;
     white-space: nowrap; /* Prevent text wrapping */
@@ -88,6 +89,7 @@ body {
 .taskbar.closed a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is closed */
 }
+
 
 /* Content Styles */
 .content {
@@ -113,5 +115,3 @@ body {
     padding: 20px;
     z-index: 999;
 }
-
-
