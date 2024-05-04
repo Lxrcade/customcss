@@ -48,6 +48,7 @@ body {
     z-index: 1000;
 }
 
+
 .taskbar:hover {
     width: 200px;
 }
@@ -61,7 +62,7 @@ body {
 }
 
 .taskbar.closed ul {
-    flex-direction: row; /* Display the navigation items horizontally when taskbar is closed */
+    flex-direction: row; /* Display the navigation items horizontally when the taskbar is closed */
 }
 
 .taskbar li {
@@ -74,20 +75,26 @@ body {
     transform: scale(1.1);
 }
 
+
 .taskbar a {
     text-decoration: none;
     color: #fff;
-    display: flex; /* Use flexbox to control spacing */
-    align-items: center; /* Align items vertically */
+    display: block;
     padding: 10px;
     text-align: center;
     transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    transform: rotate(90deg); /* Rotate the text vertically by default */
+    transform-origin: left center; /* Ensure proper rotation origin */
 }
 
 .taskbar.closed a {
-    justify-content: center; /* Center text horizontally when taskbar is closed */
+    transform: rotate(0deg); /* Rotate the text horizontally when taskbar is closed */
 }
 
+.taskbar:hover a {
+    transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
+}
 
 
 /* Content Styles */
