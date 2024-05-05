@@ -40,8 +40,8 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 70px; /* Adjust width */
     height: 100vh;
+    width: 70px; /* Adjust width */
     background-color: #000; /* Change background color */
     color: #fff; /* Change text color */
     padding-top: 20px;
@@ -52,12 +52,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    transform: translateY(-100%); /* Move taskbar off-screen */
+    transform: translateX(-100%); /* Move taskbar off-screen */
 }
 
 .taskbar:hover {
     width: 200px; /* Adjust width on hover */
-    transform: translateY(0); /* Move taskbar back to default position */
+    transform: translateX(0); /* Move taskbar back to default position */
 }
 
 .taskbar ul {
@@ -96,27 +96,6 @@ body {
     transform: rotate(0deg); /* Rotated horizontally */
 }
 
-.taskbar .logo {
-    margin-bottom: auto;
-}
-/*s*/
-
-/* Adjust the position of top-links */
-.taskbar .top-links {
-    align-self: flex-start;
-    margin-top: 20px;
-    margin-bottom: auto;
-}
-
-/* Adjust the position of bottom-links */
-.taskbar .bottom-links {
-    align-self: flex-end;
-    margin-top: 20px;
-    margin-bottom: auto;
-}
-
-
-/* Adjust the position of the logo */
 .taskbar .logo {
     margin-bottom: auto;
 }
