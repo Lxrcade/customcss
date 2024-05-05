@@ -35,29 +35,28 @@ body {
 }
 
 /* Taskbar Styles */
-/* Taskbar Styles */
 .taskbar {
     position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
-    width: 70px; /* Adjust width */
-    background-color: #000; /* Change background color */
-    color: #fff; /* Change text color */
+    width: 70px;
+    background-color: #000;
+    color: #fff;
     padding-top: 20px;
     overflow-y: auto;
-    transition: width 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    transition: width 0.3s ease, transform 0.3s ease;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    transform: translateX(-100%); /* Move taskbar off-screen */
+    transform: translateX(-100%);
 }
 
 .taskbar:hover {
-    width: 200px; /* Adjust width on hover */
-    transform: translateX(0); /* Move taskbar back to default position */
+    width: 200px;
+    transform: translateX(0);
 }
 
 .taskbar ul {
@@ -68,13 +67,8 @@ body {
     flex-direction: column;
 }
 
-.taskbar.closed ul {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .taskbar li {
-    margin-bottom: 20px; /* Increase margin */
+    margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -92,19 +86,9 @@ body {
     white-space: nowrap;
 }
 
-.taskbar:hover a {
-    transform: rotate(0deg); /* Rotated horizontally */
+.taskbar a:hover {
+    color: #ccc;
 }
-
-.taskbar .logo {
-    margin-bottom: auto;
-}
-
-/* Rotate the navigation links horizontally when the taskbar is hovered or opened */
-.taskbar:hover a {
-    transform: rotate(0deg); /* Rotated horizontally */
-}
-
 
 /* Hide the radio buttons */
 .player-radio {
@@ -113,9 +97,7 @@ body {
 
 /* Show the content when the corresponding radio button is checked */
 #Single:checked ~ #Single-info,
-#Single:hover ~ #Single-info,
-#Albums:checked ~ #Albums-info,
-#Albums:hover ~ #Albums-info {
+#Albums:checked ~ #Albums-info {
     display: block;
 }
 
@@ -134,40 +116,22 @@ label:hover {
     background-color: #999;
 }
 
-/* Style for radio buttons */
-.player-radio {
-    display: none;
-}
-
-/* Hide the radio buttons */
-.player-radio + label {
-    display: inline-block;
-}
-
 /* Style for content */
 .player-info {
     display: none;
 }
 
-/* Show the content when the corresponding radio button is checked */
-.player-radio:checked ~ .player-info {
-    display: block;
-}
-
 /* Adjust top margin of content to accommodate taskbar */
 .content {
-    margin-left: 50px;
+    margin-left: 70px;
     padding-bottom: 100px;
 }
 
 /* Style for options container */
 .options-container {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
     background-color: HSL(0, 0%, 0.4%);
     color: #000;
     padding: 20px;
     text-align: center;
 }
-
-
-
