@@ -92,12 +92,12 @@ body {
 }
 
 .taskbar.closed a {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 
 .taskbar.closed .top-links a,
 .taskbar.closed .bottom-links a {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 
 /* Adjust the position of top-links */
@@ -110,8 +110,8 @@ body {
 /* Adjust the position of bottom-links */
 .taskbar .bottom-links {
     align-self: flex-end;
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: autopx;
 }
 
 /* Adjust the position of the logo */
