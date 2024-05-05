@@ -119,13 +119,7 @@ body {
     margin-bottom: auto;
 }
 
-/* Rotate the navigation links vertically by default */
-.taskbar a {
-    writing-mode: vertical-rl;
-    transform: rotate(90deg); /* Rotated vertically */
-    white-space: nowrap;
-    padding: 5px 0;
-}
+
 
 /* Rotate the navigation links horizontally when the taskbar is hovered or opened */
 .taskbar:hover a {
