@@ -39,10 +39,10 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 50px;
+    width: 70px; /* Adjust width */
     height: 100vh;
-    background-color: #999B9B;
-    color: rgb(0, 161, 155);
+    background-color: #000; /* Change background color */
+    color: #fff; /* Change text color */
     padding-top: 20px;
     overflow-y: auto;
     transition: width 0.3s ease;
@@ -54,7 +54,7 @@ body {
 }
 
 .taskbar:hover {
-    width: 200px;
+    width: 200px; /* Adjust width on hover */
 }
 
 .taskbar ul {
@@ -71,7 +71,7 @@ body {
 }
 
 .taskbar li {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increase margin */
     transition: transform 0.3s ease;
 }
 
@@ -93,6 +93,14 @@ body {
     transform: rotate(0);
 }
 
+.taskbar .logo {
+    margin-bottom: 50px; /* Increase margin */
+}
+
+.taskbar:hover a {
+    transform: rotate(0deg);
+}
+
 /* Adjust the position of top-links */
 .taskbar .top-links {
     align-self: flex-start;
@@ -106,6 +114,7 @@ body {
     margin-top: 20px;
     margin-bottom: auto;
 }
+
 
 /* Adjust the position of the logo */
 .taskbar .logo {
@@ -176,7 +185,7 @@ label:hover {
 .options-container {
     margin-top: 20px; /* Adjust as needed */
     background-color: HSL(0, 0%, 0.4%);
-    color: #fff;
+    color: #000;
     padding: 20px;
     text-align: center;
 }
