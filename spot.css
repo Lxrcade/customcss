@@ -101,6 +101,9 @@ body {
 }
 
 /* Adjust the position of top-links */
+/* Existing CSS styles */
+
+/* Adjust the position of top-links */
 .taskbar .top-links {
     align-self: center; /* Align top-links to the center */
     margin-top: auto; /* Push the links to the top */
@@ -114,6 +117,39 @@ body {
     margin-bottom: auto; /* Push the links to the top */
 }
 
+
+.taskbar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    transform-origin: left center;
+}
+
+.taskbar.closed a {
+    transform: rotate(0deg);
+}
+
+.taskbar.closed .top-links a,
+.taskbar.closed .bottom-links a {
+    transform: rotate(0deg);
+}
+
+/* Add the new CSS adjustments here */
+.taskbar .logo {
+    margin-bottom: auto;
+}
+
+.taskbar a {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    padding: 5px 0;
+}
 
 .taskbar:hover a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
