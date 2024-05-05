@@ -100,15 +100,20 @@ body {
     transform: rotate(0deg);
 }
 
+/* Adjust the position of top-links */
 .taskbar .top-links {
-    align-self: flex-start;
-    margin-top: 20px;
+    align-self: center; /* Align top-links to the center */
+    margin-top: auto; /* Push the links to the top */
+    margin-bottom: auto; /* Push the links to the top */
 }
 
+/* Adjust the position of bottom-links */
 .taskbar .bottom-links {
-    align-self: flex-end;
-    margin-bottom: 20px;
+    align-self: flex-end; /* Align bottom-links to the bottom */
+    margin-top: auto; /* Push the links to the top */
+    margin-bottom: auto; /* Push the links to the top */
 }
+
 
 .taskbar:hover a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
