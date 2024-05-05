@@ -119,18 +119,19 @@ body {
     margin-bottom: auto;
 }
 
-/* Rotate and align the navigation links vertically */
+/* Rotate the navigation links vertically by default */
 .taskbar a {
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    transform: rotate(90deg); /* Rotated vertically */
     white-space: nowrap;
     padding: 5px 0;
 }
 
-/* Rotate the navigation links horizontally on hover */
+/* Rotate the navigation links horizontally when the taskbar is hovered or opened */
 .taskbar:hover a {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Rotated horizontally */
 }
+
 
 /* Hide the radio buttons */
 .player-radio {
