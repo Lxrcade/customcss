@@ -111,7 +111,7 @@ body {
 .taskbar .bottom-links {
     align-self: flex-end;
     margin-top: 20px;
-    margin-bottom: autopx;
+    margin-bottom: auto;
 }
 
 /* Adjust the position of the logo */
