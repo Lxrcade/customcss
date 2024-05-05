@@ -181,8 +181,8 @@ label:hover {
 }
 
 /* Adjust top margin of content to accommodate taskbar */
-/* Adjust top margin of content to accommodate taskbar */
 .content {
-    padding-top: 50px; /* Height of taskbar */
+    margin-left: 50px;
+    padding-bottom: 100px;
 }
 
