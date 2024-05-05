@@ -45,16 +45,19 @@ body {
     color: #fff; /* Change text color */
     padding-top: 20px;
     overflow-y: auto;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, transform 0.3s ease; /* Add transform transition */
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    transform: rotate(-90deg); /* Rotate taskbar by default */
+    transform-origin: right top; /* Set rotation origin */
 }
 
 .taskbar:hover {
     width: 200px; /* Adjust width on hover */
+    transform: rotate(0deg); /* Rotate back to default on hover */
 }
 
 .taskbar ul {
@@ -63,11 +66,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    transform: rotate(90deg); /* Rotate links vertically */
 }
 
 .taskbar.closed ul {
     flex-direction: row;
     justify-content: space-around;
+    transform: rotate(0deg); /* Rotate links horizontally when closed */
 }
 
 .taskbar li {
@@ -89,16 +94,12 @@ body {
     white-space: nowrap;
 }
 
-.taskbar.closed a {
-    transform: rotate(0);
+.taskbar:hover a {
+    transform: rotate(0deg); /* Rotated horizontally */
 }
 
 .taskbar .logo {
-    margin-bottom: 50px; /* Increase margin */
-}
-
-.taskbar:hover a {
-    transform: rotate(0deg);
+    margin-bottom: auto;
 }
 
 /* Adjust the position of top-links */
