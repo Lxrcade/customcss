@@ -49,8 +49,8 @@ body {
     z-index: 1000;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
 }
 
 .taskbar:hover {
@@ -101,46 +101,36 @@ body {
 }
 
 /* Adjust the position of top-links */
-/* Your existing CSS styles here */
-
-/* Adjust the position of top-links */
 .taskbar .top-links {
-    align-self: flex-start; /* Align top-links to the top */
-    margin-top: 20px; /* Add some margin */
+    align-self: flex-start;
+    margin-top: 20px;
     margin-bottom: auto;
 }
 
 /* Adjust the position of bottom-links */
 .taskbar .bottom-links {
-    align-self: flex-end; /* Align bottom-links to the bottom */
+    align-self: flex-end;
     margin-top: auto;
-    margin-bottom: 20px; /* Add some margin */
+    margin-bottom: 20px;
 }
 
 /* Adjust the position of the logo */
 .taskbar .logo {
-    margin-bottom: auto; /* Push the logo to the top */
+    margin-bottom: auto;
 }
 
 /* Rotate and align the navigation links vertically */
 .taskbar a {
-    writing-mode: vertical-rl; /* Rotate the text */
-    transform: rotate(180deg); /* Adjust the rotation */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     white-space: nowrap;
-    padding: 5px 0; /* Add some padding */
+    padding: 5px 0;
 }
 
 /* Rotate the navigation links horizontally on hover */
 .taskbar:hover a {
-    transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
+    transform: rotate(0deg);
 }
-
-.content {
-    margin-top: 50px; /* Adjust the margin to match the height of the taskbar */
-    padding-bottom: 100px;
-}
-
-/* Your existing CSS styles here */
 
 /* Hide the radio buttons */
 .player-radio {
@@ -190,4 +180,7 @@ label:hover {
     display: block;
 }
 
-
+/* Adjust top margin of content to accommodate taskbar */
+.content {
+    margin-top: 50px; /* Height of taskbar */
+}
