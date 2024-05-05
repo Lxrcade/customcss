@@ -87,17 +87,10 @@ body {
     text-align: center;
     transition: color 0.3s ease;
     white-space: nowrap;
-    transform: rotate(90deg);
-    transform-origin: left center;
 }
 
 .taskbar.closed a {
-    transform: rotate(90deg);
-}
-
-.taskbar.closed .top-links a,
-.taskbar.closed .bottom-links a {
-    transform: rotate(90deg);
+    transform: rotate(0);
 }
 
 /* Adjust the position of top-links */
@@ -118,8 +111,6 @@ body {
 .taskbar .logo {
     margin-bottom: auto;
 }
-
-
 
 /* Rotate the navigation links horizontally when the taskbar is hovered or opened */
 .taskbar:hover a {
