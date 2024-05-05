@@ -184,6 +184,11 @@ label:hover {
 /* Style for options container */
 .options-container {
     margin-top: 20px; /* Adjust as needed */
+    background-color: HSL(0, 0%, 0.4%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
+
 
 
