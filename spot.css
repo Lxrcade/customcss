@@ -181,3 +181,9 @@ label:hover {
     padding-bottom: 100px;
 }
 
+/* Style for options container */
+.options-container {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
