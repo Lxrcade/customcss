@@ -101,90 +101,41 @@ body {
 }
 
 /* Adjust the position of top-links */
-/* Existing CSS styles */
+/* Your existing CSS styles here */
 
 /* Adjust the position of top-links */
 .taskbar .top-links {
-    align-self: center; /* Align top-links to the center */
-    margin-top: auto; /* Push the links to the top */
-    margin-bottom: auto; /* Push the links to the top */
+    align-self: flex-start; /* Align top-links to the top */
+    margin-top: 20px; /* Add some margin */
+    margin-bottom: auto;
 }
 
 /* Adjust the position of bottom-links */
 .taskbar .bottom-links {
     align-self: flex-end; /* Align bottom-links to the bottom */
-    margin-top: auto; /* Push the links to the top */
-    margin-bottom: auto; /* Push the links to the top */
+    margin-top: auto;
+    margin-bottom: 20px; /* Add some margin */
 }
 
-
-.taskbar a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 10px;
-    text-align: center;
-    transition: color 0.3s ease;
-    white-space: nowrap;
-    transform: rotate(90deg);
-    transform-origin: left center;
-}
-
-.taskbar.closed a {
-    transform: rotate(0deg);
-}
-
-.taskbar.closed .top-links a,
-.taskbar.closed .bottom-links a {
-    transform: rotate(0deg);
-}
-
-/* Add the new CSS adjustments here */
+/* Adjust the position of the logo */
 .taskbar .logo {
-    margin-bottom: auto;
+    margin-bottom: auto; /* Push the logo to the top */
 }
 
+/* Rotate and align the navigation links vertically */
 .taskbar a {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    writing-mode: vertical-rl; /* Rotate the text */
+    transform: rotate(180deg); /* Adjust the rotation */
     white-space: nowrap;
-    padding: 5px 0;
+    padding: 5px 0; /* Add some padding */
 }
 
+/* Rotate the navigation links horizontally on hover */
 .taskbar:hover a {
     transform: rotate(0deg); /* Rotate the text horizontally when taskbar is hovered or open */
 }
 
-
-/* Content Styles */
-.content {
-    margin-left: 50px;
-    padding-bottom: 100px;
-}
-
-/* Adjust the width of the content area to fit the remaining space */
-.albums-container {
-    width: calc(100% - 50px);
-    padding: 20px;
-}
-
-/* Footer Styles */
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: calc(100% - 50px);
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    z-index: 999;
-}
-
-
-/*Switch albums*/
-
-/* Your CSS styles here */
+/* Your existing CSS styles here */
 
 /* Hide the radio buttons */
 .player-radio {
@@ -233,4 +184,5 @@ label:hover {
 .player-radio:checked ~ .player-info {
     display: block;
 }
+
 
