@@ -55,8 +55,8 @@ body {
     top: 0;
     height: 100vh;
     width: 70px;
-    background-color: #000;
-    color: #fff;
+    background-color: #999B9B;
+    color: rgb(0, 161, 155);
     padding-top: 20px;
     overflow-y: auto;
     transition: width 0.3s ease, transform 0.3s ease;
