@@ -96,12 +96,22 @@ body {
     display: block;
     padding: 10px;
     text-align: center;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
     white-space: nowrap;
+    transform-origin: center center; /* Set the transform origin */
 }
 
 .taskbar a:hover {
     color: #ccc;
+}
+
+/* Animation for text and logo rotation */
+.taskbar:hover .taskbar a {
+    transform: rotate(0deg); /* Rotate text and logo horizontally when hovered */
+}
+
+.taskbar a {
+    transform: rotate(-90deg); /* Rotate text and logo vertically */
 }
 
 /* Hide the radio buttons */
