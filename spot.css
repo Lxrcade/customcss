@@ -92,7 +92,7 @@ body {
 
 .taskbar a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Changed text color to white */
     display: block;
     padding: 10px;
     text-align: center;
