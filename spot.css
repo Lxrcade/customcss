@@ -18,6 +18,20 @@ body {
     text-align: center;
 }
 
+/* Footer Styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 50px);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+
 /* Artist Profile Section */
 .artist-profile {
     background-color: #999B9B;
