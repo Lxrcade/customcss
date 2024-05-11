@@ -1,6 +1,46 @@
 /* Font Awesome Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+/* Animation for dashing in from the left */
+@keyframes dashInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for dashing in from the right */
+@keyframes dashInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for flying upwards */
+@keyframes flyUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Animation for dashing out */
+@keyframes dashOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 /* Reset default browser styles */
 html,
 body {
@@ -118,10 +158,12 @@ body {
     display: none;
 }
 
+
 /* Show the content when the corresponding radio button is checked */
 #Single:checked ~ #Single-info,
 #Albums:checked ~ #Albums-info {
     display: block;
+    animation: dashIn 0.5s ease forwards;
 }
 
 /* Style for labels */
@@ -134,6 +176,7 @@ label {
     border-radius: 5px;
     color: #fff; /* Set text color to white */
     transition: background-color 0.3s ease; /* Add transition for background color */
+    position: relative; /* Add relative positioning for pseudo-elements */
 }
 
 /* Style for labels when hovered */
@@ -158,6 +201,40 @@ label:hover {
     display: block;
 }
 
+/* Pseudo-element for animation effect */
+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Color of the animation */
+    z-index: -1; /* Place below label content */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+/* Pseudo-element animation when hovered */
+label:hover:before {
+    animation: dashOut 0.5s ease forwards;
+}
+
+/* Show the content when the corresponding label is hovered */
+label:hover + .player-info {
+    display: block;
+    animation: flyUp 0.5s ease forwards;
+}
+
+/* Animation for dashing in from the left when Single is selected */
+#Single:checked ~ #Single-info {
+    animation: dashInLeft 0.5s ease forwards;
+}
+
+/* Animation for dashing in from the right when Albums is selected */
+#Albums:checked ~ #Albums-info {
+    animation: dashInRight 0.5s ease forwards;
+}
 
 /* Show the content when the corresponding radio button is hovered */
 .taskbar label:hover + .player-info {
