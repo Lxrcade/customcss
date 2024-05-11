@@ -146,8 +146,7 @@ body {
     display: none;
 }
 
-
-/* Style for labels */
+/* Adjusted style for labels */
 label {
     cursor: pointer;
     display: inline-block;
@@ -163,6 +162,7 @@ label {
 label:hover {
     background-color: rgb(0, 161, 155); /* Change background color when hovered */
 }
+
 
 /* Style for content */
 .player-info {
