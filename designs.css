@@ -1,4 +1,82 @@
 /**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fad6a5, #f68ab2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.buttons a {
+    display: block;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #f68ab2;
+    color: white;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #f68ab2;
+}
+//
 
 .white
 {
