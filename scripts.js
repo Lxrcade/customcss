@@ -1,4 +1,3 @@
-<script>
 let lastScrollTop = 0; // Variable to keep track of the last scroll position
 const nav = document.querySelector('.navc'); // Select the navigation bar
 
@@ -14,4 +13,3 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop; // Update last scroll position
 });
-</script>
