@@ -1,21 +1,31 @@
-window.onscroll = function() {
+// Sticky Navbar Functionality
+window.onscroll = function () {
   var navbar = document.querySelector('.navc');
-  var sticky = navbar.offsetTop;
-
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('fixed-top');  // Add the fixed class on scroll
-  } else {
-    navbar.classList.remove('fixed-top');  // Remove when scrolled back up
+  if (navbar) { // Ensure navbar exists
+    var sticky = navbar.offsetTop;
+    if (window.pageYOffset > sticky) {
+      navbar.classList.add('fixed-top'); // Add the fixed class on scroll
+    } else {
+      navbar.classList.remove('fixed-top'); // Remove when scrolled back up
+    }
   }
 };
 
-  // JavaScript to Open and Close the Modal
-    function openModal() {
-      document.getElementById("modal").classList.add("show");
-      document.getElementById("backdrop").classList.add("show");
-    }
+// Modal Open and Close Functions
+function openModal() {
+  var modal = document.getElementById("modal");
+  var backdrop = document.getElementById("backdrop");
+  if (modal && backdrop) { // Ensure modal and backdrop exist
+    modal.classList.add("show");
+    backdrop.classList.add("show");
+  }
+}
 
-    function closeModal() {
-      document.getElementById("modal").classList.remove("show");
-      document.getElementById("backdrop").classList.remove("show");
-    }
+function closeModal() {
+  var modal = document.getElementById("modal");
+  var backdrop = document.getElementById("backdrop");
+  if (modal && backdrop) { // Ensure modal and backdrop exist
+    modal.classList.remove("show");
+    backdrop.classList.remove("show");
+  }
+}
