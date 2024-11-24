@@ -8,3 +8,14 @@ window.onscroll = function() {
     navbar.classList.remove('fixed-top');  // Remove when scrolled back up
   }
 };
+
+  // JavaScript to Open and Close the Modal
+    function openModal() {
+      document.getElementById("modal").classList.add("show");
+      document.getElementById("backdrop").classList.add("show");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
+      document.getElementById("backdrop").classList.remove("show");
+    }
