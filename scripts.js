@@ -20,12 +20,12 @@ window.onscroll = function() {
       document.getElementById("backdrop").classList.remove("show");
     }
  // JavaScript to Open and Close the Modal
-    function openModal() {
+    function openModal2() {
       document.getElementById("modal2").classList.add("show");
       document.getElementById("backdrop2").classList.add("show");
     }
 
-    function closeModal() {
+    function closeModal2() {
       document.getElementById("modal2").classList.remove("show");
       document.getElementById("backdrop2").classList.remove("show");
     }
