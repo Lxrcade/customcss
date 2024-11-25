@@ -1,84 +1,150 @@
-/* General Styling */
+/* Case Study CSS Framework */
 html {
   background-image: url('img/ss.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
+  margin: 0; /* Remove any default margin */
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-h1 {
+h1, h4 {
   text-align: center;
-  margin-top: 20px;
 }
 
+h4 {
+  color: white;
+}
+
+/* Container Styling */
 .container {
-
-  display: block;
-  margin: auto;
-  padding: 10px;
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* Restrict content width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cont2 {
+.titlebox {
+  margin-bottom: 30px; /* Space below the title */
+}
+
+.contents {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 30px; /* Add space between items */
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Team Member Container Styling */
+.team-member {
+  color: white;
+  background-color: rgba(169, 169, 169, 0.8); /* Semi-transparent gray */
+  border: 2px solid red;
+  border-radius: 10px; /* Rounded edges */
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.leftcontainer,
+.rightcontainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgba(29, 30, 33, 255);
+  background-color: rgba(29, 30, 33, 0.8); /* Dark gray with opacity */
+  max-width: 45%; /* Prevents containers from exceeding available space */
+}
+
+.imgbox1, .imgbox2 {
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  border: inset 12px rgba(169, 169, 169, 0.8);
 }
 
 .imgc {
-  display: inline-block;
-  margin: 10px;
-  border: inset 12px red;
-  width: 80px;
-  height: 190px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Responsive Navbar */
-.navc {
-  position: fixed;
-  top: 0; /* Set to 0 to fix at the top */
-  width: 100%;
-  opacity: 0.8; /* Changed to 0.8 for better visibility */
-  background-color: darkgray;
+/* Icons */
+.icon {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  display: block;
+}
+
+.iconc {
+  display: flex;
+  flex-direction: row;
   padding: 20px;
-  transition: top 0.3s; /* Smooth transition for hiding and showing */
+  gap: 10px;
 }
 
+.images {
+  height: 200px;
+  width: 300px;
+}
+
+/* Navbar Styling */
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
-.navtext {
-     margin-top: 30px;
+.navc {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
   width: 100%;
-  display: inline-block;
+  opacity: 0.8;
+  background-color: darkgray;
+  z-index: 10;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: darkgray;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 0;
   text-align: center;
-  padding: 10px 20px;
-  border: ridge 3px #999B9B;
-  border-radius: 13px;
-  background-color: #333;
-  color: white;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.navtext:hover {
-  transform: scale(1.5); /* Zoom in effect */
-  background-color: #555;
-}
-
-/* Responsive Buttons */
+/* Buttons */
 .btn {
+  text-align: center;
   margin: 10px;
   padding: 15px 40px;
   border: none;
@@ -90,18 +156,6 @@ nav {
   border-radius: 12px;
   background-color: #333;
   transition: transform 0.3s ease; /* Add smooth transition for zoom */
-}
-
-.btn::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
 }
 
 .btn::before {
@@ -125,12 +179,6 @@ nav {
   opacity: 0;
 }
 
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
-
 .btn:hover::before {
   opacity: 1;
 }
@@ -139,34 +187,16 @@ nav {
   transform: scale(1.1); /* Add zoom effect */
 }
 
-.btn:active:after {
-  background: transparent;
-}
-
-.btn:active {
-  color: #000;
-  font-weight: bold;
-}
-
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
+  .contents {
+    flex-direction: column; /* Stack items */
+    gap: 20px;
   }
 
-  .imgc {
-    width: 60px;
-    height: 150px;
-  }
-
-  .navtext {
-    width: 80px;
-    margin-bottom: 10px;
-  }
-
-  .container {
-    padding: 20px;
+  .imgbox1, .imgbox2 {
+    width: 80%;
+    height: auto;
   }
 
   .btn {
@@ -186,25 +216,94 @@ nav {
   color: rgb(0, 161, 155);
 }
 
-hr.cloud {
-  border-top: 8px groove hsl(0, 0%, 40%);
-  height: 14px;
-  box-shadow: 0 0 10px 1px aqua;
-}
+/**Modals*/
+/* Link/Button Styling */
+    .open-modal {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      background: linear-gradient(black,darkgray);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
 
-.gradient {
-  align-items: stretch;
-  margin: 1em 0;
-  height: 2em;
-  line-height: 2em;
+    .open-modal:hover {
+      background-color: black;
+    }
+
+    /* Modal Styling */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 400px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      z-index: 1000;
+    }
+
+    .modal-header {
+      background-color: gray;
+      color: white;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      font-size: 28px;
+    }
+
+    .modal-body {
+      background-color: black;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .modal-footer {
+      padding: 10px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+
+    .close-modal {
+      cursor: pointer;
+      color: #007BFF;
+      font-size: 14px;
+      border: none;
+      background: none;
+    }
+
+    .close-modal:hover {
+      text-decoration: underline;
+
+    }
+
+    /* Backdrop */
+    .modal-backdrop {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999; /* Behind modal */
+    }
+
+    .show {
+      display: block; /* Show the modal and backdrop */
+}
+.aboutbox
+{
+  width: 100%;
   color: white;
-  background: black;
-}
-
-.gradient:before {
-  background: linear-gradient(to right, white, black);
-}
-
-.gradient:after {
-  background: linear-gradient(to left, white, black);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
