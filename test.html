@@ -1,44 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Inline Styles Web Page</title>
-    <link rel="icon" type="image/x-icon" href="https://lxrcade.github.io/customcss/logo.webp">
-    <link rel="stylesheet" type="text/css" href="https://lxrcade.github.io/customcss/my.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <script type="text/javascript" src="https://lxrcade.github.io/customcss/scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://lxrcade.github.io/customcss/designs.css">
-    <link rel="stylesheet" type="text/css" href="https://lxrcade.github.io/customcss/modw3.css">
 </head>
 
 <body>
+    <header>
+        <div class="navc">
+            <nav>
+                <a href="#home" class="btn">Home</a>
+                <a href="hobbies.html" class="btn">Projects and Hobbies</a>
+                <a href="#about-us" class="btn">About Us</a>
+                <a href="#contact-us" class="btn">Contacts</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="container">
-    <img src="https://lxrcade.github.io/customcss/merc.webp" class="container image">
-    <h1>Mercedes AMG Petronas F1 Team</h1>
-    </div>
-
-    <div class="container2">
-    <hr class="cloud">
-    <table>
-        <tr class="white">
-            <th><a href="">HOME</a></th>
-            <th>
-                <div class="w3-dropdown-hover">
-                    <button class="w3-button">DRIVERS</button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <span class="mercwhite"><a href="#" class="w3-bar-item w3-button"><b>Lewis</b></a></span>
-                        <a href="#" class="w3-bar-item w3-button"><b>George</b></a>
+    <br/>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="container">
+            <div class="titlebox"></div>
+            <h1 class="white">Profiles</h1>
+            <div class="contents">
+                <!-- Team Member 1 -->
+                <div class="team-member leftcontainer">
+                    <button class="open-modal" onclick="openModal()"><img src="img/jakem.jpg" class="imgbox1"></button>
+                    <!-- Modal -->
+                    <div class="modal-backdrop" id="backdrop"></div>
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <h1>Jake Moises Morales</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                An aspiring programmer with a passion for creating and developing software solutions. Dedicated to continuous learning, I am deeply interested in C++ and Java and look forward to mastering Python. My ultimate goal is to become a professional software developer and make a meaningful impact in the industry.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="close-modal" onclick="closeModal()">Close</button>
+                        </div>
                     </div>
                 </div>
-            </th>
-        </tr>
-    </table>
-</div>
 
-    <hr class="cloud">
-    <br/>
+                <!-- Team Member 2 -->
+                <div class="team-member rightcontainer">
+                    <button class="open-modal" onclick="openModal2()"><img src="img/mark.jpg" class="imgbox1"></button>
+                    <!-- Modal -->
+                    <div class="modal-backdrop" id="backdrop2"></div>
+                    <div class="modal" id="modal2">
+                        <div class="modal-header">
+                            <h1>Mark Piolo Morente</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                As a future programmer, I am excited to embark on a journey of creativity, problem-solving, and innovation. Programming empowers me to turn ideas into reality, and continuously learn new technologies. I aspire to master coding languages, design efficient algorithms, and develop applications. With determination and a passion for technology, I am ready to face challenges, embrace growth, and contribute to shaping the future through programming.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="close-modal" onclick="closeModal2()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- About Us Section -->
+        <section id="about-us" class="aboutbox">
+            <h2>About Us</h2>
+            <br/>
+            <h3>Mark Piolo Morente</h3>
+            <br/>
+            <p>
+                I am a motivated second-year student pursuing a Bachelor of Science in Information and Communications Technology at Nueva Ecija University of Science and Technology, Sumacab Campus. My interest in technology, sparked in high school, drives my pursuit of a career in IT. Outside academics, I enjoy playing musical instruments, basketball, and mobile games, fostering creativity and skill development.
+            </p>
+            <br/>
+            <h3>Jake</h3>
+            <br/>
+            <p>
+                I am a second-year college student pursuing a Bachelor of Science in Information Technology at Nueva Ecija University of Science and Technology, Sumacab Campus. I've had an interest in technology from a young age, with a curiosity about how both hardware and software work. This passion led me to pursue a career in IT with the goal of becoming a professional software developer, adaptable across industries like food and healthcare.
+            </p>
+            <br/>
+        </section>
 
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="container">
+            <h2 class="white">Contact Us</h2>
+            <div class="iconc">
+                <div><a href="https://www.facebook.com/markpiolo.morentw?mibextid=ZbWKwL" target="_blank"><img src="img/fb.png" class="icon"></a></div>
+                <div><a href="https://www.instagram.com/kyoujin.mp/profilecard/?igsh=MTVucTNkOXc1N2l6dw==" target="_blank"><img src="img/ig.png" class="icon"></a></div>
+            </div>
+            <div class="white">
+                <div><img src="img/gm.png" class="icon"></div>
+                <div>morentemarkypiolo@gmail.com<br />moralesjake930@gmail.com</div>
+            </div>
+            <div class="white">
+                <div><img src="img/ph.png" class="icon"></div>
+                <div>+63967-849-3459<br />+63960-881-7763</div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>...</p>
+    </footer>
 </body>
 
 </html>
