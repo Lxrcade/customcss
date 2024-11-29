@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratory 6: Basic Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javas.js"></script>
+</head>
+<body>
+    <form action="submit_form.php" method="post" onsubmit="validateForm(event)">
+        </form>
+</body>
+
+<body>
+<form action="submit_form.php" method="post">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" ><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" ><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ><br>
+
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="Philippines">Philippines</option>
+        <option value="United States">United States</option>
+        <option value="Japan">Japan</option>
+    </select><br>
+
+    <input type="submit" value="Submit">
+
+    <label for="termsAndConditions">Agree to Terms and Conditions:</label>
+    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" >
+</form>
+
+<script type="java.js"></script>
+</body>
+</html>
+
